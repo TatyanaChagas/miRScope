@@ -60,14 +60,14 @@ Atualmente, esta pasta no repositório já contém os arquivos de todos os miRNA
 
 A ferramenta possui dois executáveis independentes:
 
-MODO 1: Conservação Ampla (Macro)
+### MODO 1: Conservação Ampla (Macro)
 
 Agrupa miRNAs partindo exclusivamente da conservação da região seed, saltando o alinhamento completo. Ideal para respostas rápidas sobre a disseminação de grandes famílias.
 
 python run_modo_macro.py
 
 
-MODO 2: Ortologia Estrita por Coesão
+### MODO 2: Ortologia Estrita por Coesão
 
 Utiliza o MAFFT para alinhar as famílias de seed e aplica um rigoroso cutoff de 85% de identidade base a base para isolar verdadeiros ortólogos maduros, garantindo simultaneamente o resgate de miRNAs espécie-específicos.
 
