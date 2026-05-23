@@ -1,10 +1,10 @@
-🧬 MIRSCOPE
+# 🧬 MIRSCOPE
 
 MIRSCOPE é uma ferramenta automatizada desenvolvida em Python para análise comparativa e conservação evolutiva de microRNAs.
 
 A ferramenta utiliza uma abordagem centrada na região seed (nucleotídeos 2-8) e oferece duas vias analíticas para os pesquisadores: um Modo Macro (para conservação ampla da família) e um Modo Estrito (com motor de alinhamento para ortólogos reais, resgatando exclusividades biológicas).
 
-🛠️ Pré-requisitos e Compatibilidade
+## 🛠️ Pré-requisitos e Compatibilidade
 
 O MIRSCOPE foi desenhado para correr em sistemas Linux e macOS (ou Windows via WSL).
 Para utilizar a ferramenta, o seu sistema precisa ter:
@@ -13,35 +13,35 @@ Python 3.8+
 
 MAFFT (Software de alinhamento múltiplo)
 
-Como instalar o MAFFT
+### Como instalar o MAFFT
 
 O motor de coesão do MIRSCOPE exige que o MAFFT esteja instalado e acessível no seu terminal (PATH).
 
-Ubuntu/Debian (Linux):
+#### - Ubuntu/Debian (Linux):
 
 sudo apt update
 sudo apt install mafft
 
 
-macOS (via Homebrew):
+#### - macOS (via Homebrew):
 
 brew install mafft
 
 
-Via Conda (Qualquer SO):
+#### - Via Conda (Qualquer SO):
 
 conda install -c bioconda mafft
 
 
-📥 Instalação do MIRSCOPE
+## 📥 Instalação do MIRSCOPE
 
 Faça o clone deste repositório e instale as dependências do Python:
 
-# 1. Clonar o repositório
+## 1. Clonar o repositório
 git clone [https://github.com/SEU_USUARIO/mirscope.git](https://github.com/SEU_USUARIO/mirscope.git)
 cd mirscope
 
-# 2. Instalar as bibliotecas Python necessárias
+## 2. Instalar as bibliotecas Python necessárias
 pip install -r requirements.txt
 
 
@@ -77,7 +77,7 @@ O valor padrão de similaridade da ferramenta é de 85%. Se a sua pesquisa exigi
 python run_modo_estrito.py
 
 
-📊 Outputs (Resultados)
+## 📊 Outputs (Resultados)
 
 Após a execução, o MIRSCOPE gera relatórios padronizados e prontos para publicação na mesma pasta:
 
@@ -89,6 +89,6 @@ output_modo2_clusters_detalhados.xlsx: Tabela detalhada indicando exatamente a q
 
 output_modo2_grupos_intersecoes.xlsx: Tabela de leitura fácil detalhando os grupos biológicos (ex: Homo sapiens + Mus musculus) e a lista de miRNAs ortólogos partilhados.
 
-✍️ Autoria e Citação
+## ✍️ Autoria e Citação
 
 Desenvolvido por Tatyana Chagas Moura / BiovirLab
